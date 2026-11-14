@@ -135,3 +135,18 @@
     min-height: 170px;
   }
 }
+
+.fm-owner-management-link {
+  display: inline-block;
+  margin: 0 0 30px;
+  background: #102b4e;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fm-owner-management-link:hover {
+  background: #147faf;
+}

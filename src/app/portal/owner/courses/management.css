@@ -1,0 +1,200 @@
+.fm-management {
+  color: #102b4e;
+}
+
+.fm-management-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: end;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #dce6ee;
+}
+
+.fm-management-heading h1 {
+  margin: 15px 0;
+  font-size: clamp(34px, 4vw, 52px);
+  letter-spacing: -.05em;
+}
+
+.fm-management-heading p,
+.fm-management-panel p,
+.fm-management-list p {
+  color: #607589;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.fm-management-identity {
+  font-size: 12px;
+  color: #5b7185;
+}
+
+.fm-management-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 35px 0;
+}
+
+.fm-management-summary > div {
+  background: white;
+  border: 1px solid #e0e8ee;
+  padding: 25px;
+  display: grid;
+  gap: 14px;
+}
+
+.fm-management-summary span {
+  font-size: 12px;
+  color: #607589;
+  font-weight: 700;
+}
+
+.fm-management-summary strong {
+  font-size: 34px;
+  letter-spacing: -.04em;
+}
+
+.fm-management-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.fm-management-panel,
+.fm-management-list {
+  background: white;
+  border: 1px solid #e0e8ee;
+  padding: 35px;
+}
+
+.fm-management-panel h2,
+.fm-management-list h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  letter-spacing: -.035em;
+}
+
+.fm-management-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.fm-management-form label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fm-management-form input,
+.fm-management-form select,
+.fm-management-form textarea {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd9e3;
+  background: white;
+  color: #102b4e;
+  font: inherit;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.fm-management-form :is(
+  input,
+  select,
+  textarea
+):focus-visible {
+  outline: 2px solid #1689be;
+  outline-offset: 2px;
+}
+
+.fm-management-form button {
+  margin-top: 10px;
+  padding: 16px 20px;
+  background: #102b4e;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fm-management-form button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.fm-management-error {
+  padding: 12px;
+  background: #fff0ef;
+  color: #a02020;
+  font-size: 13px;
+}
+
+.fm-management-success {
+  padding: 12px;
+  background: #eaf6ee;
+  color: #22663f;
+  font-size: 13px;
+}
+
+.fm-management-list {
+  margin-top: 25px;
+}
+
+.fm-management-table-wrap {
+  overflow-x: auto;
+  margin-top: 25px;
+}
+
+.fm-management-list table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.fm-management-list th {
+  background: #f1f6fa;
+  color: #435d73;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.fm-management-list td {
+  border-bottom: 1px solid #e5edf2;
+  color: #51697d;
+  font-size: 13px;
+  padding: 15px;
+}
+
+.fm-management-footnote {
+  color: #667c8e;
+  margin-top: 25px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+  .fm-management-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .fm-management-heading {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 550px) {
+  .fm-management-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .fm-management-panel,
+  .fm-management-list {
+    padding: 22px;
+  }
+}
