@@ -81,3 +81,26 @@ online coaching management platform.
 
 No unimplemented function should be described
 as operational.
+
+## Next Development Phase — Core Platform
+
+The public website foundation has passed local build checks.
+
+Upcoming backend development:
+
+1. PostgreSQL database design and migrations
+2. Managed authentication configuration
+3. Owner, technical admin, teacher and student roles
+4. Server-enforced access permissions
+5. Student and teacher profiles
+6. Course and subject management
+7. Batch enrolment and timetables
+8. Google Meet scheduling
+9. Attendance and assessments
+10. Fees, receipts and transaction reconciliation
+
+Production authentication and payments must not be activated
+until their external services, credentials, permissions,
+security and safeguarding requirements are configured.
+
+Automated GitHub quality checks have been introduced.
