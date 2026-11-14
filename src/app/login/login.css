@@ -1,0 +1,141 @@
+.fm-login-page {
+  min-height: 78vh;
+  background: #f3f7fa;
+  color: #102b4e;
+  padding: 80px 24px;
+}
+
+.fm-login-shell {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.fm-login-back {
+  display: inline-block;
+  margin-bottom: 75px;
+  color: #4c6980;
+  font-size: 13px;
+}
+
+.fm-login-eyebrow {
+  display: block;
+  color: #0a83bd;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.fm-login-intro h1 {
+  margin: 28px 0;
+  font-size: clamp(52px, 6vw, 86px);
+  line-height: 1.08;
+  letter-spacing: -.06em;
+}
+
+.fm-login-intro h1 span {
+  color: #1186be;
+}
+
+.fm-login-intro p {
+  max-width: 440px;
+  color: #617589;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.fm-login-panel {
+  padding: 45px;
+  border: 1px solid #dfe8ee;
+  background: #fff;
+}
+
+.fm-login-panel h2 {
+  margin: 15px 0 32px;
+  font-size: 29px;
+  letter-spacing: -.035em;
+}
+
+.fm-login-form {
+  display: grid;
+  gap: 15px;
+}
+
+.fm-login-form label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fm-login-form input {
+  width: 100%;
+  border: 1px solid #d0dce5;
+  padding: 15px;
+  border-radius: 3px;
+  background: white;
+  color: #102b4e;
+  font-size: 14px;
+}
+
+.fm-login-form input:focus {
+  outline: 2px solid #1687bd;
+  outline-offset: 2px;
+}
+
+.fm-login-form button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 17px 20px;
+  background: #102b4e;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.fm-login-form button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.fm-login-error {
+  color: #a32626;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.fm-login-note,
+.fm-login-unavailable p {
+  font-size: 12px;
+  color: #63778b;
+  line-height: 1.8;
+}
+
+.fm-login-unavailable h3 {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 780px) {
+  .fm-login-shell {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .fm-login-page {
+    padding: 50px 20px;
+  }
+
+  .fm-login-back {
+    margin-bottom: 40px;
+  }
+
+  .fm-login-panel {
+    padding: 28px;
+  }
+}
