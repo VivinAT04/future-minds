@@ -29,7 +29,7 @@ export default function SiteHeader() {
         <Link href="/contact">Contact</Link>
       </nav>
 
-      <Link href="/contact" className="nav-cta">
+      <Link href="/admissions" className="nav-cta">
         Enquire now <span aria-hidden="true">↗</span>
       </Link>
     </header>

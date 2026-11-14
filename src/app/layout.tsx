@@ -1,3 +1,4 @@
+import "./admissions/admissions.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import type { Metadata } from "next";

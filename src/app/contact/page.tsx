@@ -49,9 +49,7 @@ export default function ContactPage() {
               </h2>
 
               <p>
-                Contact details, admissions procedures
-                and course schedules will be published
-                here when confirmed.
+                Official contact information and course schedules will be published here once confirmed.
               </p>
 
               <p>

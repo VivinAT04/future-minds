@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 
 const programmes = [
   { number: "01", title: "School Tuition", detail: "Classes 6–12", description: "Academic support for Classes 6–12 across CBSE, ICSE, Tamil Nadu State Board and Matriculation, including Tamil and other subjects.", tags: ["CBSE", "ICSE", "State Board", "Matriculation", "Tamil"] },

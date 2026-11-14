@@ -246,7 +246,7 @@ export default function ProgrammesPage() {
               </div>
 
               <Link
-                href="/contact"
+                href={`/programmes/${category.id}`}
                 className="fm-category-link"
               >
                 Enquire about this area
