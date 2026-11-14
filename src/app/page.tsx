@@ -10,15 +10,6 @@ const programmes = [
 export default function Home() {
   return (
     <div className="site-shell">
-      <div className="topline"><span>Future-ready learning starts here.</span><a href="#contact" aria-label="Contact details coming soon">Admissions opening soon <span aria-hidden="true">↗</span></a></div>
-      <header className="site-header">
-        <Link href="/" className="brand" aria-label="Future Minds home">
-          <Image src="/branding/fm-logo.png" alt="" width={54} height={54} priority className="brand-icon" />
-          <span className="brand-wordmark"><strong>FUTURE <em>MINDS</em></strong><small>COACHING CENTER</small></span>
-        </Link>
-        <nav aria-label="Main navigation" className="nav-links"><a href="#about">About</a><a href="#programmes">Programmes</a><a href="#approach">Our approach</a></nav>
-        <a className="nav-cta" href="#contact">Enquire now <span aria-hidden="true">↗</span></a>
-      </header>
       <main>
         <section className="hero" id="about">
           <div className="hero-main">
@@ -85,7 +76,7 @@ export default function Home() {
         </section>
         <section className="contact-panel" id="contact"><div><span className="section-kicker">BEGIN WITH FUTURE MINDS</span><h2>Every great future<br/>starts somewhere.</h2><p>We’re preparing something special. Admissions and enquiry details will be available soon.</p></div></section>
       </main>
-      <footer className="footer"><div className="footer-brand"><strong>FUTURE MINDS</strong><span>COACHING CENTER</span></div><span>Learn. Prepare. Achieve.</span><span>© 2026 Future Minds. All rights reserved.</span></footer>
+
     </div>
   );
 }
