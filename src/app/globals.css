@@ -91,3 +91,173 @@ a { text-decoration:none; color:inherit; }
 .footer-brand span { font-size:9px; letter-spacing:.1em; color:#9bb6cd; }
 @media(max-width:900px) { .nav-links {display:none;} .hero {grid-template-columns:1fr;} .hero-main {padding:65px 7vw 45px;} .hero-foot {margin-top:55px;} .hero-art {min-height:460px;} .art-logo {max-width:310px;} .programme-grid {grid-template-columns:1fr;} .programme-card {min-height:280px;} }
 @media(max-width:600px) { .topline {font-size:9px; gap:12px;} .topline a {text-align:right;} .site-header {min-height:78px;} .brand-icon {width:43px;height:43px;} .brand-wordmark strong {font-size:15px;} .brand-wordmark small {font-size:7px;} .nav-cta {padding:12px;font-size:10px;} .nav-cta span {display:none;} .hero-main {padding-top:60px;} .hero h1 {font-size:clamp(43px,11vw,60px);} .hero-copy {font-size:15px;} .hero-art {min-height:360px;} .art-logo {max-width:220px;} .art-circle {width:350px;height:350px;} .circle-two {width:470px;height:470px;} .art-bottom {font-size:8px;} .statement {padding:70px 7vw;} .programmes {padding:75px 7vw;} .section-header {display:block;} .section-header p {margin-top:23px;} .contact-panel {padding:65px 7vw;} .contact-mark {display:none;} .footer {flex-direction:column; align-items:flex-start;} }
+
+
+/* Future Minds — Professional Learning Showcase */
+
+.hero-art {
+  background: #eaf2f8;
+  padding: 55px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 630px;
+}
+
+.learning-showcase {
+  width: 100%;
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.showcase-eyebrow {
+  color: #177db3;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .19em;
+}
+
+.showcase-heading h2 {
+  margin: 22px 0;
+  font-size: clamp(32px, 3vw, 47px);
+  line-height: 1.14;
+  letter-spacing: -.055em;
+  color: #082650;
+}
+
+.showcase-heading h2 span {
+  color: #138aca;
+}
+
+.showcase-heading p {
+  max-width: 350px;
+  line-height: 1.75;
+  font-size: 14px;
+  color: #607284;
+}
+
+.showcase-feature {
+  background: #ffffff;
+  border: 1px solid #dce8f0;
+  padding: 25px 30px;
+  box-shadow: 0 18px 50px rgba(8, 38, 80, .06);
+}
+
+.showcase-feature-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e7edf2;
+  color: #71889c;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.learning-step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 23px 0;
+  border-bottom: 1px solid #e7edf2;
+}
+
+.learning-step:last-child {
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+.step-number {
+  color: #1689c9;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.learning-step div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.learning-step strong {
+  font-size: 15px;
+  color: #102944;
+}
+
+.learning-step small {
+  font-size: 12px;
+  color: #71889c;
+}
+
+.step-arrow {
+  font-size: 20px;
+  color: #1587c6;
+}
+
+.showcase-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #47718d;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: .13em;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.footer-brand strong {
+  font-size: 14px;
+  letter-spacing: .05em;
+}
+
+.footer-brand span {
+  letter-spacing: .16em;
+}
+
+@media (max-width: 900px) {
+  .hero-art {
+    padding: 60px 7vw;
+    min-height: auto;
+  }
+
+  .learning-showcase {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-art {
+    padding: 50px 6vw;
+  }
+
+  .showcase-heading h2 {
+    font-size: 34px;
+  }
+
+  .showcase-feature {
+    padding: 20px;
+  }
+
+  .learning-step {
+    gap: 12px;
+  }
+
+  .learning-step strong {
+    font-size: 13px;
+  }
+
+  .showcase-footer {
+    font-size: 9px;
+  }
+}
