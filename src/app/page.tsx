@@ -10,7 +10,7 @@ const programmes = [
 export default function Home() {
   return (
     <div className="site-shell">
-      <div className="topline"><span>Future-ready learning starts here.</span><a href="mailto:hello@futureminds.example" aria-label="Contact details coming soon">Admissions opening soon <span aria-hidden="true">↗</span></a></div>
+      <div className="topline"><span>Future-ready learning starts here.</span><a href="#contact" aria-label="Contact details coming soon">Admissions opening soon <span aria-hidden="true">↗</span></a></div>
       <header className="site-header">
         <Link href="/" className="brand" aria-label="Future Minds home">
           <Image src="/branding/fm-logo.png" alt="" width={54} height={54} priority className="brand-icon" />
