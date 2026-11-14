@@ -33,6 +33,9 @@ jobs:
       - name: TypeScript
         run: npx tsc --noEmit
 
+      - name: Authentication foundation tests
+        run: npm run test:auth
+
       - name: Production build
         run: npm run build
 
