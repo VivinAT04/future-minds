@@ -9,7 +9,9 @@
     "lint": "eslint",
     "db:check": "node scripts/database/check.mjs",
     "db:migrate": "node scripts/database/migrate.mjs",
-    "auth:check": "node scripts/database/auth-readiness.mjs"
+    "auth:check": "node scripts/database/auth-readiness.mjs",
+    "setup:configure": "node scripts/setup/configure.mjs",
+    "setup:doctor": "node scripts/setup/doctor.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
