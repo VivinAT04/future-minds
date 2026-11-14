@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const programmes = [
   { number: "01", title: "School Tuition", detail: "Classes 6–12", description: "Strong foundations and personalised support for CBSE, ICSE and Matriculation learners.", tags: ["CBSE", "ICSE", "Matriculation"] },
@@ -11,10 +12,10 @@ export default function Home() {
     <div className="site-shell">
       <div className="topline"><span>Future-ready learning starts here.</span><a href="mailto:hello@futureminds.example" aria-label="Contact details coming soon">Admissions opening soon <span aria-hidden="true">↗</span></a></div>
       <header className="site-header">
-        <a href="/" className="brand" aria-label="Future Minds home">
+        <Link href="/" className="brand" aria-label="Future Minds home">
           <Image src="/branding/fm-logo.png" alt="" width={54} height={54} priority className="brand-icon" />
           <span className="brand-wordmark"><strong>FUTURE <em>MINDS</em></strong><small>COACHING CENTER</small></span>
-        </a>
+        </Link>
         <nav aria-label="Main navigation" className="nav-links"><a href="#about">About</a><a href="#programmes">Programmes</a><a href="#approach">Our approach</a></nav>
         <a className="nav-cta" href="#contact">Enquire now <span aria-hidden="true">↗</span></a>
       </header>
