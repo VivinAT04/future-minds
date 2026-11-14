@@ -42,7 +42,7 @@ export default function Home() {
         </section>
         <section className="contact-panel" id="contact"><div><span className="section-kicker">BEGIN WITH FUTURE MINDS</span><h2>Every great future<br/>starts somewhere.</h2><p>We’re preparing something special. Admissions and enquiry details will be available soon.</p></div><div className="contact-mark">FM<span>®</span></div></section>
       </main>
-      <footer className="footer"><div className="footer-brand"><Image src="/branding/fm-logo.png" alt="" width={34} height={34}/><strong>FUTURE MINDS</strong><span>COACHING CENTER</span></div><span>Learn. Prepare. Achieve.</span><span>© {new Date().getFullYear()} Future Minds. All rights reserved.</span></footer>
+      <footer className="footer"><div className="footer-brand"><Image src="/branding/fm-logo.png" alt="" width={34} height={34}/><strong>FUTURE MINDS</strong><span>COACHING CENTER</span></div><span>Learn. Prepare. Achieve.</span><span>© 2026 Future Minds. All rights reserved.</span></footer>
     </div>
   );
 }
