@@ -591,3 +591,358 @@ a { text-decoration:none; color:inherit; }
     font-size: 12px;
   }
 }
+
+/* ==========================================
+   FUTURE MINDS — ACADEMIC CATALOGUE V2
+   ========================================== */
+
+.catalogue-page {
+  background: #ffffff;
+  color: #102944;
+}
+
+.catalogue-container {
+  width: min(1240px, 88%);
+  margin: 0 auto;
+}
+
+.catalogue-eyebrow {
+  display: inline-block;
+  color: #087ab7;
+  font-size: 11px;
+  letter-spacing: .17em;
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+.catalogue-hero {
+  padding: 105px 0 110px;
+  background:
+    linear-gradient(110deg, #f4f9fc 0%, #e8f3fa 100%);
+}
+
+.catalogue-hero h1 {
+  max-width: 950px;
+  margin: 26px 0;
+  color: #09264d;
+  font-size: clamp(44px, 5.6vw, 82px);
+  letter-spacing: -.06em;
+  line-height: 1.1;
+}
+
+.catalogue-hero h1 span {
+  color: #078bc9;
+}
+
+.catalogue-hero p {
+  max-width: 660px;
+  color: #577087;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.catalogue-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 35px;
+}
+
+.catalogue-primary {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  padding: 18px 23px;
+  border-radius: 4px;
+  background: #09264d;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background .2s;
+}
+
+.catalogue-primary:hover {
+  background: #086fa8;
+}
+
+.catalogue-secondary {
+  color: #09264d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.catalogue-overview {
+  padding: 55px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e4ecf2;
+}
+
+.catalogue-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+.catalogue-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.catalogue-chip-list span {
+  display: inline-block;
+  padding: 11px 14px;
+  background: #f2f7fa;
+  border: 1px solid #e1ecf3;
+  color: #395b76;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.catalogue-directory {
+  padding: 95px 0 105px;
+}
+
+.catalogue-section-intro {
+  max-width: 750px;
+}
+
+.catalogue-section-intro h2 {
+  margin: 22px 0;
+  font-size: clamp(36px, 4.4vw, 62px);
+  line-height: 1.13;
+  letter-spacing: -.055em;
+  color: #09264d;
+}
+
+.catalogue-section-intro h2 span {
+  color: #078bc9;
+}
+
+.catalogue-section-intro p {
+  max-width: 610px;
+  line-height: 1.85;
+  color: #607284;
+}
+
+.catalogue-anchor-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 45px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #dce8f0;
+}
+
+.catalogue-anchor-nav a {
+  padding: 13px 17px;
+  border: 1px solid #dce8f0;
+  font-size: 12px;
+  color: #315b79;
+  font-weight: 700;
+  transition: background .2s, color .2s;
+}
+
+.catalogue-anchor-nav a:hover {
+  color: white;
+  background: #09264d;
+}
+
+.catalogue-group {
+  scroll-margin-top: 30px;
+  padding: 85px 0 65px;
+  border-bottom: 1px solid #dce8f0;
+}
+
+.catalogue-group-header {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 30px;
+  margin-bottom: 42px;
+}
+
+.catalogue-number {
+  color: #b7d8e9;
+  font-size: 66px;
+  font-weight: 800;
+  letter-spacing: -.08em;
+  line-height: 1;
+}
+
+.catalogue-heading h2 {
+  margin: 12px 0 18px;
+  font-size: clamp(34px, 3.6vw, 52px);
+  letter-spacing: -.05em;
+  color: #09264d;
+}
+
+.catalogue-heading p {
+  max-width: 690px;
+  font-size: 15px;
+  color: #607284;
+  line-height: 1.85;
+}
+
+.catalogue-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.catalogue-subject-card {
+  padding: 35px 38px;
+  background: #fafcfe;
+  border: 1px solid #e0eaf1;
+}
+
+.catalogue-subject-card h3 {
+  margin: 0 0 25px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dfe9f0;
+  color: #09264d;
+  font-size: 21px;
+  letter-spacing: -.025em;
+}
+
+.catalogue-subject-card ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 22px;
+  row-gap: 17px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalogue-subject-card li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: #49677f;
+  line-height: 1.6;
+}
+
+.catalogue-list-marker {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0b91ce;
+  margin-top: 7px;
+}
+
+.catalogue-group-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.catalogue-group-footer a {
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  color: #087ab7;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.catalogue-notice {
+  background: #f4f8fb;
+  padding: 38px 0;
+}
+
+.catalogue-notice strong {
+  color: #09264d;
+  font-size: 15px;
+}
+
+.catalogue-notice p {
+  color: #536e83;
+  line-height: 1.8;
+  font-size: 14px;
+  max-width: 900px;
+}
+
+.catalogue-final-cta {
+  padding: 100px 0;
+  background: #e8f3fa;
+}
+
+.catalogue-final-cta h2 {
+  margin: 22px 0;
+  font-size: clamp(37px, 4.4vw, 60px);
+  line-height: 1.13;
+  letter-spacing: -.055em;
+  color: #09264d;
+}
+
+.catalogue-final-cta p {
+  margin-bottom: 30px;
+  color: #607284;
+  max-width: 640px;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .catalogue-subject-card ul {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogue-group-header {
+    grid-template-columns: 65px minmax(0, 1fr);
+  }
+
+  .catalogue-number {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 650px) {
+  .catalogue-container {
+    width: 90%;
+  }
+
+  .catalogue-hero {
+    padding: 70px 0;
+  }
+
+  .catalogue-hero h1 {
+    font-size: 43px;
+  }
+
+  .catalogue-overview-grid,
+  .catalogue-subject-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .catalogue-directory {
+    padding: 65px 0;
+  }
+
+  .catalogue-group {
+    padding: 65px 0 50px;
+  }
+
+  .catalogue-group-header {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .catalogue-number {
+    font-size: 36px;
+  }
+
+  .catalogue-subject-card {
+    padding: 28px 25px;
+  }
+
+  .catalogue-final-cta {
+    padding: 70px 0;
+  }
+}

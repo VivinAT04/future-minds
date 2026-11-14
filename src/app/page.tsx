@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const programmes = [
-  { number: "01", title: "School Tuition", detail: "Classes 6–12", description: "Strong foundations and personalised support for CBSE, ICSE and Matriculation learners.", tags: ["CBSE", "ICSE", "Matriculation"] },
+  { number: "01", title: "School Tuition", detail: "Classes 6–12", description: "Academic support for Classes 6–12 across CBSE, ICSE, Tamil Nadu State Board and Matriculation, including Tamil and other subjects.", tags: ["CBSE", "ICSE", "State Board", "Matriculation", "Tamil"] },
   { number: "02", title: "Competitive Exams", detail: "NEET & JEE", description: "Concept-led preparation, focused practice and regular progress reviews for ambitious aspirants.", tags: ["NEET", "JEE Main", "JEE Advanced"] },
-  { number: "03", title: "Engineering", detail: "Higher Education", description: "Subject-specific guidance to strengthen fundamentals and build practical problem-solving skills.", tags: ["Core Subjects", "Exam Support"] },
+  { number: "03", title: "Engineering", detail: "Higher Education", description: "Academic pathways across CSE, biomedical, electronics, mechanical, civil and other engineering disciplines.", tags: ["CSE", "Biomedical", "ECE", "Mechanical", "Civil"] },
 ];
 
 export default function Home() {

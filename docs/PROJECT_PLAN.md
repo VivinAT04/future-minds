@@ -331,3 +331,58 @@ A feature is complete only when:
 - Its relevant documentation is updated.
 
 This document is the source of truth for Future Minds.
+
+---
+
+## ACADEMIC CATALOGUE — CATEGORY STRUCTURE
+
+The public course catalogue must use academic categories rather
+than displaying every course as an unrelated card.
+
+Main categories:
+
+1. School Tuition
+   - Classes 6–12
+   - CBSE
+   - ICSE / CISCE
+   - Tamil Nadu State Board
+   - Matriculation
+   - Tamil and other languages
+   - Core academic subjects
+
+2. Competitive Entrance Examinations
+   - NEET
+   - JEE Main
+   - JEE Advanced
+   - Related subjects and exam preparation
+
+3. Engineering and Technology
+   - Computer Science Engineering
+   - Information Technology
+   - Biomedical Engineering
+   - Electronics and Communication
+   - Electrical and Electronics
+   - Mechanical Engineering
+   - Civil Engineering
+   - Other engineering disciplines
+   - Individual engineering subjects
+
+For future database implementation, courses must support:
+
+- Education category
+- Board
+- Grade or academic level
+- Discipline
+- Subject
+- Course
+- Batch
+- Teacher
+- Delivery mode
+- Fee structure
+- Availability status
+
+The catalogue must be flexible enough to add or remove courses
+without changing the website's underlying design.
+
+Do not claim that a subject or batch is currently available
+until the coaching centre confirms its availability.
