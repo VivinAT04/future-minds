@@ -315,22 +315,22 @@
 /* Editorial academic directory redesign */
 
 .fm-catalogue {
-  --fm-navy: #292c29;
-  --fm-blue: #66765c;
+  --fm-navy: #202b36;
+  --fm-blue: #17639b;
   --fm-muted: #747b73;
   --fm-border: #dedfd8;
-  background: #fdfcf9;
-  color: #292c29;
+  background: #ffffff;
+  color: #202b36;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .fm-intro {
-  background: #f7f6f2;
+  background: #f8fbfd;
 }
 
 .fm-overline,
 .fm-label {
-  color: #66765c;
+  color: #17639b;
   letter-spacing: .13em;
 }
 
@@ -341,11 +341,11 @@
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
   letter-spacing: -.045em;
-  color: #292c29;
+  color: #202b36;
 }
 
 .fm-intro h1 em {
-  color: #66765c;
+  color: #17639b;
   font-style: italic;
 }
 
@@ -374,7 +374,7 @@
 }
 
 .fm-subject-group h4 {
-  color: #292c29;
+  color: #202b36;
   font-weight: 600;
 }
 
@@ -383,17 +383,17 @@
 }
 
 .fm-category-link {
-  color: #596c53;
-  border-color: #66765c;
+  color: #17639b;
+  border-color: #17639b;
 }
 
 .fm-end {
-  background: #e8ebe3;
-  color: #292c29;
+  background: #eaf3fa;
+  color: #202b36;
 }
 
 .fm-end .fm-label {
-  color: #66765c;
+  color: #17639b;
 }
 
 .fm-end p {
@@ -401,5 +401,5 @@
 }
 
 .fm-end a {
-  border-color: #66765c;
+  border-color: #17639b;
 }

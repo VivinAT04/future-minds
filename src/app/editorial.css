@@ -1,13 +1,13 @@
 /* Future Minds — Editorial Design System */
 
 :root {
-  --ed-paper: #f7f6f2;
-  --ed-white: #fdfcf9;
-  --ed-ink: #292c29;
+  --ed-paper: #f8fbfd;
+  --ed-white: #ffffff;
+  --ed-ink: #202b36;
   --ed-soft-ink: #505651;
   --ed-muted: #747b73;
-  --ed-olive: #66765c;
-  --ed-pale: #e8ebe3;
+  --ed-olive: #17639b;
+  --ed-pale: #eaf3fa;
   --ed-line: #dedfd8;
   --ed-serif: Georgia, "Times New Roman", serif;
 }
@@ -214,7 +214,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   min-height: 560px;
-  background: #e2e5dc;
+  background: #eaf3fa;
   border-left: 1px solid #d9dcd2;
   padding: 35px;
   overflow: hidden;
@@ -403,7 +403,7 @@ a {
 
 .editorial-method {
   padding: 120px 0;
-  background: #ebede6;
+  background: #eaf3fa;
 }
 
 .editorial-method-layout {
@@ -534,7 +534,7 @@ a {
 }
 
 .editorial-about-principles {
-  background: #ecede7;
+  background: #eaf3fa;
   padding: 100px 0;
 }
 
@@ -578,7 +578,7 @@ a {
 }
 
 .editorial-footer {
-  background: #292d29;
+  background: #202b36;
   color: #edeee9;
   padding: 80px 0 30px;
 }
@@ -687,7 +687,7 @@ a {
 .soft-section,
 .page-cta,
 .fm-detail-cta {
-  background: #ecede7;
+  background: #eaf3fa;
 }
 
 .content-section h2,

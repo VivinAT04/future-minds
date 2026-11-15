@@ -1,0 +1,186 @@
+/*
+ * Future Minds
+ * Unified academic blue brand
+ */
+
+:root {
+  --fm-brand-blue: #17639b;
+  --fm-brand-dark: #124c79;
+  --fm-brand-ink: #202b36;
+  --fm-brand-muted: #627284;
+  --fm-brand-soft: #eaf3fa;
+
+  --premium-green: #17639b;
+  --premium-ink: #202b36;
+  --premium-paper: #f8fbfd;
+  --premium-pale: #eaf3fa;
+  --premium-text: #53697c;
+
+  --ed-olive: #17639b;
+  --ed-ink: #202b36;
+  --ed-paper: #f8fbfd;
+  --ed-pale: #eaf3fa;
+  --ed-soft-ink: #53697c;
+}
+
+body {
+  background: #ffffff;
+  color: #202b36;
+}
+
+/* Professional blue identity */
+
+.fm-premium-header,
+.editorial-header,
+.fm-site-header {
+  background: #fff;
+  border-bottom: 1px solid #dce6ee;
+}
+
+.fm-premium-brand strong,
+.editorial-brand-text strong,
+.fm-identity-text strong {
+  color: #202b36;
+}
+
+.fm-premium-login,
+.editorial-account-link,
+.fm-account-access {
+  color: #17639b;
+  border-color: #a8c5d9;
+}
+
+.fm-premium-hero,
+.editorial-hero {
+  background: #f8fbfd;
+}
+
+.fm-premium-hero h1,
+.editorial-hero h1 {
+  color: #202b36;
+}
+
+.fm-premium-hero h1 em,
+.editorial-hero h1 em,
+.editorial-hero h1 span,
+.fm-premium-method h2 em,
+.editorial-method h2 em {
+  color: #17639b;
+}
+
+.fm-premium-feature,
+.editorial-hero-composition {
+  background: linear-gradient(
+    145deg,
+    #eaf3fa 0%,
+    #d8eaf6 100%
+  );
+  border-color: #c7dce9;
+}
+
+.fm-premium-feature-body h2 em,
+.editorial-composition-word strong {
+  color: #17639b;
+}
+
+.fm-premium-feature-number,
+.fm-premium-feature-top,
+.fm-premium-feature-bottom,
+.editorial-composition-top,
+.editorial-composition-bottom {
+  color: #536f86;
+}
+
+.fm-premium-feature-rule {
+  background: #b9d1e1;
+}
+
+.fm-premium-feature-body p,
+.editorial-composition-word {
+  color: #53697c;
+}
+
+.fm-premium-button,
+.editorial-button {
+  background: #17639b;
+  border-color: #17639b;
+  color: white;
+}
+
+.fm-premium-button:hover,
+.editorial-button:hover {
+  background: #124c79;
+}
+
+.fm-premium-eyebrow,
+.editorial-overline,
+.fm-kicker {
+  color: #17639b;
+}
+
+.fm-premium-plain-link,
+.editorial-text-link,
+.fm-premium-programme-link,
+.editorial-pathway-link {
+  color: #17639b;
+  border-color: #17639b;
+}
+
+.fm-premium-pathway,
+.fm-premium-method,
+.editorial-method,
+.editorial-about-principles {
+  background: #eaf3fa;
+}
+
+.fm-premium-footer,
+.editorial-footer {
+  background: #202b36;
+}
+
+/* Existing academic directory */
+
+.fm-catalogue {
+  --fm-navy: #202b36;
+  --fm-blue: #17639b;
+  --fm-muted: #627284;
+  --fm-border: #dce6ee;
+}
+
+.fm-intro,
+.fm-end,
+.inner-hero,
+.fm-detail-hero,
+.fm-admissions-hero {
+  background: #f0f6fb !important;
+}
+
+.fm-intro h1 em {
+  color: #17639b !important;
+}
+
+.fm-end,
+.page-cta,
+.fm-detail-cta {
+  background: #eaf3fa !important;
+  color: #202b36 !important;
+}
+
+.fm-end h2,
+.fm-end p,
+.fm-end a {
+  color: #202b36 !important;
+}
+
+.fm-detail-label,
+.fm-overline,
+.fm-label,
+.inner-eyebrow {
+  color: #17639b !important;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #17639b;
+  outline-offset: 3px;
+}
