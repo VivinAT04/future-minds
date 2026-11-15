@@ -311,3 +311,95 @@
     padding: 60px 0;
   }
 }
+
+/* Editorial academic directory redesign */
+
+.fm-catalogue {
+  --fm-navy: #292c29;
+  --fm-blue: #66765c;
+  --fm-muted: #747b73;
+  --fm-border: #dedfd8;
+  background: #fdfcf9;
+  color: #292c29;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fm-intro {
+  background: #f7f6f2;
+}
+
+.fm-overline,
+.fm-label {
+  color: #66765c;
+  letter-spacing: .13em;
+}
+
+.fm-intro h1,
+.fm-directory-heading h2,
+.fm-category-heading h3,
+.fm-end h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -.045em;
+  color: #292c29;
+}
+
+.fm-intro h1 em {
+  color: #66765c;
+  font-style: italic;
+}
+
+.fm-intro-copy p,
+.fm-directory-heading p,
+.fm-category-heading p {
+  color: #505651;
+}
+
+.fm-index {
+  border-color: #dedfd8;
+}
+
+.fm-index span {
+  color: #505651;
+}
+
+.fm-category-number {
+  color: #a5b0a1;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.fm-subject-group {
+  border-color: #dedfd8;
+}
+
+.fm-subject-group h4 {
+  color: #292c29;
+  font-weight: 600;
+}
+
+.fm-subject-group li {
+  color: #505651;
+}
+
+.fm-category-link {
+  color: #596c53;
+  border-color: #66765c;
+}
+
+.fm-end {
+  background: #e8ebe3;
+  color: #292c29;
+}
+
+.fm-end .fm-label {
+  color: #66765c;
+}
+
+.fm-end p {
+  color: #505651;
+}
+
+.fm-end a {
+  border-color: #66765c;
+}

@@ -171,9 +171,9 @@ export default function ProgrammesPage() {
           <div className="fm-intro-grid">
             <div>
               <h1>
-                Education for
+                Academic
                 <br />
-                <em>every stage.</em>
+                <em>programmes.</em>
               </h1>
             </div>
 
@@ -184,7 +184,7 @@ export default function ProgrammesPage() {
                 engineering disciplines.
               </p>
               <a href="#academic-directory">
-                Explore academic areas <span aria-hidden="true">↘</span>
+                Browse the directory 
               </a>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function ProgrammesPage() {
           <div className="fm-directory-heading">
             <div>
               <span className="fm-label">ACADEMIC DIRECTORY</span>
-              <h2>Explore our learning areas.</h2>
+              <h2>Programme directory.</h2>
             </div>
             <p>
               Browse by education level, curriculum and discipline.
@@ -250,7 +250,7 @@ export default function ProgrammesPage() {
                 className="fm-category-link"
               >
                 Enquire about this area
-                <span aria-hidden="true">↗</span>
+                
               </Link>
             </section>
           ))}
@@ -262,9 +262,9 @@ export default function ProgrammesPage() {
           <div>
             <span className="fm-label">NEXT STEPS</span>
             <h2>
-              Find the right direction
+              Explore the next stage
               <br />
-              for your learning.
+              of your education.
             </h2>
           </div>
 
@@ -275,7 +275,7 @@ export default function ProgrammesPage() {
               schedules are subject to confirmation.
             </p>
             <Link href="/contact">
-              Admissions information <span aria-hidden="true">↗</span>
+              Admissions information 
             </Link>
           </div>
         </div>

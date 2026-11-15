@@ -73,7 +73,7 @@ export default async function ProgrammeDetail({
             className="fm-detail-button"
           >
             Register your interest
-            <span aria-hidden="true">↗</span>
+            
           </Link>
 
         </div>
@@ -139,7 +139,7 @@ export default async function ProgrammeDetail({
             className="fm-detail-button"
           >
             Register your interest
-            <span aria-hidden="true">↗</span>
+            
           </Link>
         </div>
       </section>

@@ -90,7 +90,7 @@ async function AdmissionsContent({
           </p>
 
           <Link href="/programmes">
-            Explore academic programmes →
+            Explore academic programmes
           </Link>
         </div>
 
@@ -114,7 +114,7 @@ async function AdmissionsContent({
               </p>
 
               <Link href="/programmes">
-                View available programme information →
+                View programme information
               </Link>
             </div>
           )}

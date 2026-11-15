@@ -3,35 +3,44 @@ import Link from "next/link";
 
 export default function SiteHeader() {
   return (
-    <header className="site-header">
-      <Link href="/" className="brand" aria-label="Future Minds homepage">
-        <Image
-          src="/branding/fm-logo.png"
-          alt=""
-          width={54}
-          height={54}
-          className="brand-icon"
-        />
+    <header className="fm-premium-header">
+      <div className="fm-premium-header-inner">
+        <Link
+          href="/"
+          className="fm-premium-brand"
+          aria-label="Future Minds home"
+        >
+          <Image
+            src="/branding/fm-logo.png"
+            alt=""
+            width={40}
+            height={40}
+          />
 
-        <span className="brand-wordmark">
-          <strong>
-            FUTURE <em>MINDS</em>
-          </strong>
-          <small>COACHING CENTER</small>
-        </span>
-      </Link>
+          <span>
+            <strong>Future Minds</strong>
+            <small>COACHING CENTER</small>
+          </span>
+        </Link>
 
-      <nav className="nav-links" aria-label="Main navigation">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/programmes">Programmes</Link>
-        <Link href="/#approach">Our Approach</Link>
-        <Link href="/contact">Contact</Link>
-      </nav>
+        <nav
+          className="fm-premium-nav"
+          aria-label="Primary navigation"
+        >
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/programmes">Programmes</Link>
+          <Link href="/admissions">Admissions</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
 
-      <Link href="/admissions" className="nav-cta">
-        Enquire now <span aria-hidden="true">↗</span>
-      </Link>
+        <Link
+          href="/login"
+          className="fm-premium-login"
+        >
+          Account login
+        </Link>
+      </div>
     </header>
   );
 }

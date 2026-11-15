@@ -2,109 +2,112 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Future Minds",
+  title: "About Future Minds",
   description:
-    "Learn about Future Minds Coaching Center and our approach to education."
+    "Learn about the academic purpose and teaching approach of Future Minds Coaching Center.",
 };
 
 export default function AboutPage() {
   return (
-    <main className="inner-page">
-
-      <section className="inner-hero">
-        <div className="page-container">
-          <span className="inner-eyebrow">ABOUT FUTURE MINDS</span>
+    <main className="editorial-interior">
+      <section className="editorial-interior-hero">
+        <div className="editorial-container">
+          <span className="editorial-overline">
+            ABOUT THE CENTRE
+          </span>
 
           <h1>
-            Education designed
+            Education begins
             <br />
-            <span>for what comes next.</span>
+            with understanding.
           </h1>
 
           <p>
-            Future Minds is building a learning environment
-            where academic understanding, confidence and
-            preparation come together.
+            Future Minds is developing a thoughtful
+            learning environment supporting school,
+            entrance examination and engineering
+            education.
           </p>
         </div>
       </section>
 
-      <section className="content-section">
-        <div className="page-container two-column">
-
+      <section className="editorial-interior-content">
+        <div className="editorial-container editorial-copy-columns">
           <div>
-            <span className="inner-eyebrow">OUR PURPOSE</span>
-            <h2>Helping learners move forward.</h2>
+            <span className="editorial-overline">
+              OUR PURPOSE
+            </span>
+
+            <h2>
+              Clear teaching.
+              <br />
+              Meaningful progress.
+            </h2>
           </div>
 
-          <div className="content-copy">
+          <div className="editorial-prose">
             <p>
-              Every learner has different goals, strengths and
-              challenges. Our aim is to support their academic
-              development through clear explanations,
-              structured learning and consistent practice.
+              Learners bring different experiences,
+              interests and academic goals. Our aim
+              is to make difficult subjects more
+              approachable through careful explanation
+              and structured practice.
             </p>
 
             <p>
-              From school education to competitive
-              examinations and engineering subjects,
-              Future Minds is designed to support
-              learners across important stages of education.
+              The centre&apos;s academic areas span
+              school curricula, competitive entrance
+              preparation and engineering disciplines.
+              Individual course availability is
+              confirmed during admissions.
             </p>
           </div>
-
         </div>
       </section>
 
-      <section className="content-section soft-section">
-        <div className="page-container">
+      <section className="editorial-about-principles">
+        <div className="editorial-container">
+          <span className="editorial-overline">
+            WHAT GUIDES OUR WORK
+          </span>
 
-          <span className="inner-eyebrow">OUR APPROACH</span>
-
-          <h2>Three principles. One purpose.</h2>
-
-          <div className="values-grid">
-
-            <article className="value-card">
+          <div className="editorial-principle-list">
+            <div>
               <span>01</span>
-              <h3>Understand</h3>
+              <h3>Clarity</h3>
               <p>
-                Build strong conceptual foundations
-                before moving to advanced topics.
+                Explain concepts in a way learners
+                can understand and apply.
               </p>
-            </article>
+            </div>
 
-            <article className="value-card">
+            <div>
               <span>02</span>
-              <h3>Practise</h3>
+              <h3>Consistency</h3>
               <p>
-                Strengthen knowledge through
-                focused exercises and revision.
+                Encourage structured learning
+                and regular practice.
               </p>
-            </article>
+            </div>
 
-            <article className="value-card">
+            <div>
               <span>03</span>
-              <h3>Progress</h3>
+              <h3>Confidence</h3>
               <p>
-                Develop confidence and move
-                towards academic goals.
+                Help students approach academic
+                challenges with greater assurance.
               </p>
-            </article>
-
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section className="page-cta">
-        <div className="page-container">
-          <h2>Discover our programmes.</h2>
-          <Link href="/programmes" className="button-primary">
-            Explore programmes ↗
+          <Link
+            href="/programmes"
+            className="editorial-text-link"
+          >
+            Explore academic programmes
           </Link>
         </div>
       </section>
-
     </main>
   );
 }

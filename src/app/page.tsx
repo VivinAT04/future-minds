@@ -1,80 +1,374 @@
+import Link from "next/link";
 
 const programmes = [
-  { number: "01", title: "School Tuition", detail: "Classes 6–12", description: "Academic support for Classes 6–12 across CBSE, ICSE, Tamil Nadu State Board and Matriculation, including Tamil and other subjects.", tags: ["CBSE", "ICSE", "State Board", "Matriculation", "Tamil"] },
-  { number: "02", title: "Competitive Exams", detail: "NEET & JEE", description: "Concept-led preparation, focused practice and regular progress reviews for ambitious aspirants.", tags: ["NEET", "JEE Main", "JEE Advanced"] },
-  { number: "03", title: "Engineering", detail: "Higher Education", description: "Academic pathways across CSE, biomedical, electronics, mechanical, civil and other engineering disciplines.", tags: ["CSE", "Biomedical", "ECE", "Mechanical", "Civil"] },
+  {
+    number: "01",
+    name: "School Education",
+    description:
+      "Curriculum-aligned academic support for Classes 6–12, with an emphasis on foundational understanding and subject proficiency.",
+    detail: "Classes 6–12",
+    subjects: [
+      "CBSE",
+      "ICSE / ISC",
+      "Tamil Nadu State Board",
+      "Matriculation",
+      "Mathematics",
+      "Science",
+      "Languages",
+    ],
+    href: "/programmes/school",
+  },
+  {
+    number: "02",
+    name: "Entrance Examinations",
+    description:
+      "Conceptual preparation and structured problem-solving across subjects relevant to medical and engineering entrance examinations.",
+    detail: "NEET UG · JEE Main · JEE Advanced",
+    subjects: [
+      "Physics",
+      "Chemistry",
+      "Mathematics",
+      "Botany",
+      "Zoology",
+      "Practice & Revision",
+    ],
+    href: "/programmes/entrance",
+  },
+  {
+    number: "03",
+    name: "Engineering & Technology",
+    description:
+      "Subject-based academic guidance across undergraduate engineering disciplines, from computing and electronics to applied sciences.",
+    detail: "Undergraduate Academic Support",
+    subjects: [
+      "Computer Science",
+      "Artificial Intelligence",
+      "Electronics",
+      "Mechanical",
+      "Biomedical",
+      "Civil",
+    ],
+    href: "/programmes/engineering",
+  },
+];
+
+const learningApproach = [
+  {
+    index: "01",
+    title: "Establish understanding",
+    description:
+      "Start with the principles behind a topic, clarify terminology, and connect new ideas to existing knowledge.",
+  },
+  {
+    index: "02",
+    title: "Apply through practice",
+    description:
+      "Work through examples and questions that turn theoretical understanding into practical problem-solving.",
+  },
+  {
+    index: "03",
+    title: "Review and improve",
+    description:
+      "Use revision, reflection and feedback to identify gaps and strengthen academic confidence.",
+  },
 ];
 
 export default function Home() {
   return (
-    <div className="site-shell">
-      <main>
-        <section className="hero" id="about">
-          <div className="hero-main">
-            <div className="eyebrow"><span className="eyebrow-line" /> EDUCATION WITH PURPOSE</div>
-            <h1>Better learning.<br/><span>Brighter futures.</span></h1>
-            <p className="hero-copy">A place to build confidence, master concepts and move towards your next big milestone. Welcome to a more thoughtful way to learn.</p>
-            <div className="hero-actions"><a className="button-primary" href="#programmes">Explore programmes <span aria-hidden="true">↗</span></a><a className="button-secondary" href="#approach">Discover our approach <span aria-hidden="true">→</span></a></div>
-            <div className="hero-foot"><div className="hero-foot-number">06<span>—</span>12</div><div className="hero-foot-copy">School tuition · Competitive exams<br/>Engineering education</div></div>
-          </div>
-          <div className="hero-art" aria-label="Future Minds learning programmes">
-            <div className="learning-showcase">
-              <div className="showcase-heading">
-                <span className="showcase-eyebrow">A WORLD OF POSSIBILITIES</span>
-                <h2>Knowledge today.<br/><span>Opportunity tomorrow.</span></h2>
-                <p>Structured learning for every important academic milestone.</p>
-              </div>
+    <main className="fm-premium-home">
+      <section className="fm-premium-hero">
+        <div className="fm-premium-width fm-premium-hero-grid">
+          <div className="fm-premium-hero-copy">
+            <span className="fm-premium-eyebrow">
+              AN ACADEMIC LEARNING CENTRE
+            </span>
 
-              <div className="showcase-feature">
-                <div className="showcase-feature-top">
-                  <span>YOUR LEARNING JOURNEY</span>
-                  <span>01 — 03</span>
-                </div>
+            <h1>
+              A better way
+              <br />
+              to <em>understand.</em>
+              <br />
+              A stronger way
+              <br />
+              to learn.
+            </h1>
 
-                <div className="learning-step">
-                  <span className="step-number">01</span>
-                  <div>
-                    <strong>Build your foundation</strong>
-                    <small>School education · Classes 6–12</small>
-                  </div>
-                  <span className="step-arrow">↗</span>
-                </div>
+            <p>
+              Future Minds brings together school
+              education, competitive examination
+              preparation and engineering studies
+              in one structured academic environment.
+            </p>
 
-                <div className="learning-step">
-                  <span className="step-number">02</span>
-                  <div>
-                    <strong>Prepare with purpose</strong>
-                    <small>NEET · JEE Main · JEE Advanced</small>
-                  </div>
-                  <span className="step-arrow">↗</span>
-                </div>
+            <div className="fm-premium-actions">
+              <Link
+                className="fm-premium-button"
+                href="/programmes"
+              >
+                Explore programmes
+              </Link>
 
-                <div className="learning-step">
-                  <span className="step-number">03</span>
-                  <div>
-                    <strong>Go beyond the classroom</strong>
-                    <small>Engineering education</small>
-                  </div>
-                  <span className="step-arrow">↗</span>
-                </div>
-              </div>
+              <Link
+                className="fm-premium-plain-link"
+                href="/about"
+              >
+                Discover our approach
+              </Link>
+            </div>
 
-              <div className="showcase-footer">
-                <span>THINK BIGGER</span>
-                <span>LEARN BETTER</span>
-                <span>GO FURTHER</span>
-              </div>
+            <div className="fm-premium-hero-meta">
+              <span>School</span>
+              <span>Entrance preparation</span>
+              <span>Engineering</span>
             </div>
           </div>
-        </section>
-        <section className="statement" id="approach"><span className="section-kicker">THE FUTURE MINDS PHILOSOPHY</span><p>Education isn’t just about the next exam. <strong>It’s about building the mind for everything that comes after.</strong></p></section>
-        <section className="programmes" id="programmes">
-          <div className="section-header"><div><span className="section-kicker">WHAT WE TEACH</span><h2>Find your path<br/><span>forward.</span></h2></div><p>Focused academic programmes designed to meet learners where they are — and help them go further.</p></div>
-          <div className="programme-grid">{programmes.map(programme => <article className="programme-card" key={programme.number}><div className="card-top"><span>{programme.number} / PROGRAMME</span><span className="card-arrow" aria-hidden="true">↗</span></div><div><span className="programme-detail">{programme.detail}</span><h3>{programme.title}</h3><p>{programme.description}</p></div><div className="card-tags">{programme.tags.map(tag=><span key={tag}>{tag}</span>)}</div></article>)}</div>
-        </section>
-        <section className="contact-panel" id="contact"><div><span className="section-kicker">BEGIN WITH FUTURE MINDS</span><h2>Every great future<br/>starts somewhere.</h2><p>We’re preparing something special. Admissions and enquiry details will be available soon.</p></div></section>
-      </main>
 
-    </div>
+          <div className="fm-premium-feature">
+            <div className="fm-premium-feature-top">
+              <span>FUTURE MINDS</span>
+              <span>ACADEMIC AREAS</span>
+            </div>
+
+            <div className="fm-premium-feature-body">
+              <span className="fm-premium-feature-number">
+                01 — 03
+              </span>
+
+              <h2>
+                Learning
+                <br />
+                begins with
+                <br />
+                <em>curiosity.</em>
+              </h2>
+
+              <div className="fm-premium-feature-rule" />
+
+              <p>
+                Understand the subject.
+                <br />
+                Strengthen the foundation.
+                <br />
+                Develop the confidence to progress.
+              </p>
+            </div>
+
+            <div className="fm-premium-feature-bottom">
+              <span>KNOWLEDGE</span>
+              <span>UNDERSTANDING</span>
+              <span>PROGRESS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="fm-premium-intro">
+        <div className="fm-premium-width fm-premium-split">
+          <div>
+            <span className="fm-premium-eyebrow">
+              THE FUTURE MINDS APPROACH
+            </span>
+          </div>
+
+          <div>
+            <h2>
+              Good education does more than prepare
+              someone for an examination.
+            </h2>
+
+            <p>
+              It helps learners develop the ability
+              to reason, question, solve problems and
+              understand unfamiliar ideas. Our academic
+              approach places these abilities at the
+              centre of learning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="fm-premium-programmes"
+        id="programmes"
+      >
+        <div className="fm-premium-width">
+          <div className="fm-premium-heading">
+            <div>
+              <span className="fm-premium-eyebrow">
+                OUR ACADEMIC AREAS
+              </span>
+
+              <h2>
+                Programmes for
+                <br />
+                different stages of learning.
+              </h2>
+            </div>
+
+            <p>
+              Explore the educational areas covered
+              by Future Minds. Individual subjects,
+              batches and schedules are confirmed
+              through the admissions process.
+            </p>
+          </div>
+
+          <div className="fm-premium-programme-list">
+            {programmes.map((programme) => (
+              <article
+                className="fm-premium-programme"
+                key={programme.number}
+              >
+                <span className="fm-premium-index">
+                  {programme.number}
+                </span>
+
+                <div className="fm-premium-programme-content">
+                  <span className="fm-premium-category">
+                    {programme.detail}
+                  </span>
+
+                  <h3>{programme.name}</h3>
+
+                  <p>{programme.description}</p>
+
+                  <div className="fm-premium-subjects">
+                    {programme.subjects.map((subject) => (
+                      <span key={subject}>{subject}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <Link
+                  href={programme.href}
+                  className="fm-premium-programme-link"
+                >
+                  Explore this area
+                </Link>
+              </article>
+            ))}
+          </div>
+
+          <Link
+            className="fm-premium-directory-link"
+            href="/programmes"
+          >
+            View the full programme directory
+          </Link>
+        </div>
+      </section>
+
+      <section
+        className="fm-premium-method"
+        id="approach"
+      >
+        <div className="fm-premium-width fm-premium-method-grid">
+          <div>
+            <span className="fm-premium-eyebrow">
+              HOW WE APPROACH LEARNING
+            </span>
+
+            <h2>
+              Clarity first.
+              <br />
+              <em>Progress follows.</em>
+            </h2>
+
+            <p>
+              Our learning philosophy is built
+              around three connected practices.
+            </p>
+          </div>
+
+          <div className="fm-premium-method-list">
+            {learningApproach.map((item) => (
+              <article key={item.index}>
+                <span>{item.index}</span>
+
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="fm-premium-pathway">
+        <div className="fm-premium-width">
+          <span className="fm-premium-eyebrow">
+            FINDING THE RIGHT PROGRAMME
+          </span>
+
+          <h2>
+            From an academic interest
+            <br />
+            to a clear learning plan.
+          </h2>
+
+          <div className="fm-premium-pathway-grid">
+            <div>
+              <strong>Explore</strong>
+              <p>
+                Browse programmes by curriculum,
+                education level or engineering
+                discipline.
+              </p>
+            </div>
+
+            <div>
+              <strong>Enquire</strong>
+              <p>
+                Register interest in an academic
+                area and share the information
+                relevant to your learning needs.
+              </p>
+            </div>
+
+            <div>
+              <strong>Confirm</strong>
+              <p>
+                Review the available subjects,
+                learning arrangements and fees
+                before proceeding with enrolment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="fm-premium-cta">
+        <div className="fm-premium-width fm-premium-cta-grid">
+          <div>
+            <span className="fm-premium-eyebrow">
+              ADMISSIONS & ENQUIRIES
+            </span>
+
+            <h2>
+              Explore what comes
+              <br />
+              next in your education.
+            </h2>
+          </div>
+
+          <div>
+            <p>
+              Find programme information and
+              register your interest. Course
+              availability, fees and teaching
+              schedules are provided when confirmed.
+            </p>
+
+            <Link
+              className="fm-premium-button"
+              href="/admissions"
+            >
+              Admissions information
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
