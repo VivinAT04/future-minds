@@ -14,6 +14,14 @@ export default function OwnerDashboard() {
             Manage Courses &amp; Batches →
           </Link>
         </div>
+        <div className="fm-portal-container">
+          <Link
+            href="/portal/owner/operations"
+            className="fm-owner-management-link"
+          >
+            Academic Operations →
+          </Link>
+        </div>
         <RoleDashboard
           role="owner"
           modules={[
